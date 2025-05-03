@@ -1,0 +1,172 @@
+/* --- Newsletter Section --- */
+.newsletter-section {
+  display: flex;
+  width: 100%;
+  min-height: 60vh;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.newsletter-left {
+  flex: 0 0 40%;
+  background-color: #efdee0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.newsletter-left img {
+  max-width: 80%;
+  height: auto;
+  display: block;
+  margin: 0;
+  align-self: flex-end;
+  position: relative; /* Tambahkan ini */
+  bottom: -130px; /* Tambahkan ini - geser 20px ke bawah. Sesuaikan nilainya jika perlu */
+}
+
+.newsletter-right {
+  flex: 1;
+  background-color: #dcafc9;
+  padding: 50px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #333;
+  position: relative;
+  z-index: 1;
+  box-sizing: border-box;
+}
+
+.newsletter-right h1 {
+  font-size: 3.6rem;
+  color: #f8f8f8;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.newsletter-right p {
+  font-size: 1.6rem;
+  color: #f8f8f8;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.newsletter-form {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+}
+
+.newsletter-form input[type="email"] {
+  flex-grow: 1;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  /* Hapus border-radius spesifik sisi */
+  /* margin-right: -1px; */ /* Hapus atau komentari baris ini */
+  border-radius: 4px; /* Terapkan radius ke semua sudut */
+  font-size: 1rem;
+  outline: none;
+}
+.newsletter-form input[type="email"]:focus {
+  border-color: #832c5e;
+}
+
+.newsletter-form button {
+  padding: 12px 25px;
+  background-color: transparent;
+  color: #f8f8f8;
+  border: 3px solid #f8f8f8;
+  /* Hapus border-radius spesifik sisi */
+  border-radius: 4px; /* Terapkan radius ke semua sudut */
+  cursor: pointer;
+  font-size: 1rem;
+  white-space: nowrap;
+  transition: background-color 0.3s ease;
+  margin-left: 8px; /* Tambahkan ini untuk memberi jarak (sesuaikan nilai 8px jika perlu) */
+}
+
+.newsletter-form button:hover {
+  background-color: #cb95b4;
+}
+
+/* --- Wave Styling --- */
+.newsletter-wave-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 40%;
+  width: 100px; /* Ukuran wave diperkecil lagi */
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.newsletter-wave-container svg {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  min-width: 100vh;
+  min-height: 60px; /* Disesuaikan dengan width container */
+  transform-origin: center center;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  fill: #efdee0; /* Warna wave diubah jadi warna KIRI */
+}
+
+/* Responsiveness (Contoh sederhana) */
+@media (max-width: 768px) {
+  .newsletter-section {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .newsletter-left,
+  .newsletter-right {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+
+  .newsletter-left {
+    min-height: 250px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+  }
+
+  .newsletter-left img {
+    max-width: 50%;
+    align-self: center;
+    margin-top: 20px;
+  }
+
+  .newsletter-right {
+    padding: 40px 30px;
+    text-align: center;
+  }
+
+  .newsletter-right h1 {
+    font-size: 2rem;
+  }
+  .newsletter-right p {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form {
+    max-width: 100%;
+    justify-content: center;
+  }
+
+  .newsletter-wave-container {
+    display: none;
+  }
+}

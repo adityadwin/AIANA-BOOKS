@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Cart - AINA Publishing</title>
+    <link rel="stylesheet" href="../style/style.css" />
+    <link rel="stylesheet" href="../style/cartStyle.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img
+            src="../assets/images/logo/logo.png"
+            alt="AINA Publishing Logo"
+          />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="home.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="books.html" class="nav-link">Books</a>
+        <a href="newsletter.html" class="nav-link">Newsletter</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="cart">
+        <a href="cart.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </div>
+    </nav>
+
+    <main class="cart-container">
+      <h1>My Carts</h1>
+
+      <div class="cart-content">
+        <div class="cart-items-column">
+          <div class="cart-item-card">
+            <img
+              src="../assets/images/books/main.png"
+              alt="A Faraway Journey"
+              class="item-image"
+            />
+            <div class="item-info">
+              <p class="item-title">A Faraway Journey</p>
+              <div class="item-controls">
+                <div class="item-quantity">
+                  <span>QTY</span>
+                  <button class="qty-btn minus" aria-label="Kurangi jumlah">
+                    -
+                  </button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus" aria-label="Tambah jumlah">
+                    +
+                  </button>
+                </div>
+                <div class="item-price">
+                  <span>Price</span>
+                  <span class="price-value">$5.15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item-card">
+            <img
+              src="../assets/images/books/main.png"
+              alt="Activity Workbook"
+              class="item-image"
+            />
+            <div class="item-info">
+              <p class="item-title">Activity Workbook</p>
+              <div class="item-controls">
+                <div class="item-quantity">
+                  <span>QTY</span>
+                  <button class="qty-btn minus" aria-label="Kurangi jumlah">
+                    -
+                  </button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus" aria-label="Tambah jumlah">
+                    +
+                  </button>
+                </div>
+                <div class="item-price">
+                  <span>Price</span>
+                  <span class="price-value">$6.15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cart-item-card">
+            <img
+              src="../assets/images/books/main.png"
+              alt="Creative Workbook"
+              class="item-image"
+            />
+            <div class="item-info">
+              <p class="item-title">Creative Workbook</p>
+              <div class="item-controls">
+                <div class="item-quantity">
+                  <span>QTY</span>
+                  <button class="qty-btn minus" aria-label="Kurangi jumlah">
+                    -
+                  </button>
+                  <span class="qty-value">1</span>
+                  <button class="qty-btn plus" aria-label="Tambah jumlah">
+                    +
+                  </button>
+                </div>
+                <div class="item-price">
+                  <span>Price</span>
+                  <span class="price-value">$6.15</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="sub-total-row">
+            <div class="bg-total">
+              <span>Sub-total</span> <span class="sub-total-value">$17.45</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="order-summary-column">
+          <div class="order-summary-card">
+            <h2>Order Summary</h2>
+            <hr />
+            <div class="summary-line item-count">
+              <span>Items</span>
+              <span class="value-box">3</span>
+            </div>
+            <div class="summary-section shipping">
+              <span>Shipping</span>
+              <input
+                type="text"
+                placeholder="Select shipping"
+                readonly
+                class="value-box shipping-placeholder"
+              />
+            </div>
+            <div class="summary-section discount-code">
+              <span>Discount Code</span>
+              <div class="input-group">
+                <input type="text" placeholder="Enter code here" />
+                <button class="apply-btn">Apply</button>
+              </div>
+            </div>
+            <hr />
+            <div class="summary-line discount-amount">
+              <span>Discount</span>
+              <span class="value-box summary-value">$xx</span>
+            </div>
+            <div class="summary-line tax-amount">
+              <span>Tax</span>
+              <span class="value-box summary-value">$xx</span>
+            </div>
+            <div class="summary-line total-amount">
+              <span>Total</span>
+              <span class="value-box total-value summary-value">$17.45</span>
+            </div>
+
+            <button class="checkout-btn">Checkout</button>
+            <button class="back-shopping-btn">Back To Shopping</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://instagram.com" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:info@ainapublishing.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://facebook.com" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <p class="copyright">© AINA publishing. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 8px 24px;
+  border-radius: 4px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-align: center;
+  border: 1px solid transparent;
+}
+
+.btn-primary {
+  background-color: #832c5e;
+  color: white;
+  border-color: #832c5e;
+}
+
+.btn-primary:hover {
+  background-color: #6e2650;
+  border-color: #6e2650;
+}
+
+.btn-outline {
+  border-color: #832c5e;
+  color: #832c5e;
+  background-color: transparent;
+}
+
+.btn-outline:hover {
+  background-color: #832c5e;
+  color: white;
+}
+
+.btn-outline-white {
+  border-color: white;
+  color: white;
+  background-color: transparent;
+}
+
+.btn-outline-white:hover {
+  background-color: white;
+  color: #832c5e;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 32px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo img {
+  height: 40px;
+  width: auto;
+  display: block;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-link {
+  color: #707070;
+  padding: 8px 0;
+}
+
+.nav-link:hover {
+  color: #832c5e;
+}
+
+.cart i {
+  font-size: 24px;
+  color: #333;
+  cursor: pointer;
+}
+.footer {
+  background-color: #a3cfd9;
+  padding: 32px;
+  text-align: center;
+  margin-top: auto;
+  color: white;
+  display: flex;
+  flex-direction: column; /* Stack the elements vertically */
+  justify-content: center;
+  align-items: center;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 7rem;
+}
+
+.social-link {
+  color: white;
+  font-size: 3rem;
+  transition: color 0.3s ease;
+}
+
+.social-link:hover {
+  color: #832c5e;
+}
+
+.copyright {
+  font-size: 14px;
+  margin-top: 16px; /* Add space above the copyright text */
+}
+
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+  }
+}

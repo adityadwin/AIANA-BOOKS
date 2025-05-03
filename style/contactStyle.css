@@ -1,0 +1,170 @@
+/* Hero Section */
+.hero {
+  background-color: #efdee0;
+  min-height: 130svh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-bottom: 0;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-box {
+  flex: 0 0 90%; /* Adjusted left box width */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+  color: #832c5e;
+}
+
+.heading {
+  font-size: 3.5rem;
+  font-weight: bolder;
+  margin-bottom: 10px;
+  text-align: left;
+  line-height: 1.4;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  margin-bottom: 20px;
+  width: 100%; /* Full width form fields */
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.form-field input,
+.form-field textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.btn-send {
+  padding: 5px 20px;
+  background-color: #832c5e;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: auto; /* Button not full width */
+  align-self: flex-start; /* Align the button to the left */
+  width: 12%;
+}
+
+.hero .wave-container.hero-wave {
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.hero .container,
+.hero .left-box {
+  position: relative;
+  z-index: 1;
+}
+
+.wave-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.wave-container svg {
+  display: block;
+  width: 100%;
+  height: 700px;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #dcafc9;
+  min-height: 55svh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 64px 32px;
+}
+
+.quote .container {
+  width: 100%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: center;
+  margin-left: 60px;
+}
+
+.quote-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start; /* Align items to the left */
+}
+
+.quote-content h1 {
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.quote-icons {
+  display: flex;
+  flex-direction: column; /* Change to column for vertical layout */
+  align-items: flex-start; /* Align icons to the left */
+  margin-top: 20px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  font-size: 1.5rem;
+}
+
+.contact-item i {
+  margin-right: 10px;
+  font-size: 2.5rem;
+}
+
+.contact-item span {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.fas {
+  color: white;
+}

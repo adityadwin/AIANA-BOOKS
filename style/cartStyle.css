@@ -1,0 +1,421 @@
+.cart-container {
+  max-width: auto;
+  margin: 40px auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.cart-container h1 {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #5e2147;
+  margin-bottom: 30px;
+}
+
+.cart-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+/* Kolom Kiri (Item) */
+.cart-items-column {
+  flex: 2;
+  min-width: 850px; /* Disesuaikan agar tidak terlalu sempit */
+}
+
+.cart-item-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  display: flex;
+  /* align-items: center; -> Dihapus agar item-info bisa stretch */
+  gap: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.cart-item-card:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.item-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  align-self: flex-start; /* Jaga gambar tetap di atas */
+}
+
+/* === Perubahan Item Info (Point 1) === */
+.item-info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Beri jarak atas bawah antara title dan controls */
+}
+
+.item-title {
+  font-size: 1.1em;
+  font-weight: 600;
+  margin: 0 0 10px 0; /* Margin bawah dari judul */
+  /* Menambah margin atas agar ada jarak dari atas card jika gambar pendek */
+  margin-top: 5px;
+}
+
+.item-controls {
+  display: flex;
+  justify-content: space-between; /* Qty kiri, Price kanan */
+  align-items: center;
+  margin-top: 10px; /* Margin atas dari controls */
+  margin-bottom: 5px; /* Margin bawah dari controls */
+}
+/* ==================================== */
+
+.item-quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9em;
+  color: #555;
+}
+
+.qty-btn {
+  background-color: #eee;
+  border: 1px solid #ddd;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 1.1em;
+  line-height: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  color: #555;
+}
+
+.qty-btn:hover {
+  background-color: #e0e0e0;
+}
+
+.qty-value {
+  font-weight: 500;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* === Perubahan Item Price (Point 1) === */
+.item-price {
+  display: flex;
+  /* flex-direction: column; -> Dihapus (default: row) */
+  align-items: center; /* Sejajarkan label dan value secara vertikal */
+  gap: 8px; /* Jarak antara label "Price" dan value box */
+  font-size: 0.9em;
+  color: #555;
+}
+/* =================================== */
+
+.price-value {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #333;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 5px 10px;
+  border-radius: 5px;
+  min-width: 60px;
+  text-align: right;
+}
+
+.sub-total-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+  margin-top: 30px;
+  padding-right: 10px;
+  font-weight: 600;
+}
+
+.bg-total {
+  background-color: #edb7b7;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+/* === Perubahan Sub Total Value (Point 3) === */
+.sub-total-value {
+  font-size: 1.2em;
+  background-color: #f8f8f8; /* Warna background abu-abu sangat muda */
+  border: 1px solid #ddd;
+  padding: 8px 15px;
+  border-radius: 5px;
+  min-width: 80px;
+  text-align: right;
+  margin-left: 30px;
+  color: #333; /* Pastikan warna teks tetap jelas */
+}
+/* ======================================= */
+
+/* Kolom Kanan (Ringkasan) */
+.order-summary-column {
+  flex: 1;
+  min-width: 350px; /* Sedikit disesuaikan */
+}
+
+.order-summary-card {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.order-summary-card h2 {
+  font-size: 1.5em;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+  color: #5e2147;
+}
+
+.order-summary-card hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+/* Style umum untuk baris/section di summary */
+.summary-line,
+.summary-section {
+  margin-bottom: 15px;
+  font-size: 0.95em;
+  color: #444;
+}
+
+/* Style untuk baris (Items, Discount, Tax, Total) */
+.summary-line {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Perubahan Shipping & Discount (Point 2) === */
+/* Style untuk section kolom (Shipping, Discount Code) */
+.summary-section {
+  display: flex;
+  flex-direction: column; /* Label di atas */
+  align-items: flex-start; /* Rata kiri */
+  gap: 8px; /* Jarak antara label dan input/group */
+}
+
+.summary-section > span:first-child {
+  /* Styling label */
+  font-weight: 500;
+}
+
+.summary-section .value-box,
+.summary-section .input-group {
+  width: 100%; /* Buat input/group full width */
+}
+/* ============================================ */
+
+.value-box {
+  background-color: #78d2ff;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: 500;
+  min-width: 50px;
+  font-size: 0.95em;
+  box-sizing: border-box; /* Pastikan padding tidak menambah width */
+}
+
+/* === Perubahan Discount/Tax/Total Box (Point 4) === */
+.summary-value {
+  /* Class baru untuk value box di bagian bawah */
+  min-width: 100px; /* Lebarkan sedikit box discount & tax */
+  text-align: right; /* Pastikan teks rata kanan */
+  /* Untuk membuatnya agak ke tengah, kita bisa beri margin kiri auto
+     tapi ini akan bekerja jika parentnya flex dan itemnya tidak stretch.
+     Cara lain adalah memberi lebar pada label */
+  margin-left: auto; /* Dorong ke kanan sejauh mungkin */
+}
+
+.summary-line span:first-child {
+  /* Beri lebar minimum pada label */
+  min-width: 80px; /* Sesuaikan lebar ini */
+  display: inline-block; /* Agar min-width bekerja */
+}
+
+.total-value {
+  /* Khusus box Total */
+  min-width: 140px !important; /* Paksa lebih lebar */
+  font-weight: 700;
+  font-size: 1.1em;
+  color: #333;
+}
+/* =============================================== */
+
+.shipping-placeholder {
+  cursor: default;
+  color: #888;
+  text-align: left; /* Rata kiri untuk placeholder */
+}
+
+.total-amount span:first-child {
+  font-weight: bold;
+  color: #333;
+}
+
+.input-group {
+  display: flex;
+  /* width: 100%; -> Sudah diatur di .summary-section */
+}
+
+.input-group input[type="text"] {
+  flex-grow: 1;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  font-size: 0.9em;
+  outline: none;
+}
+.input-group input[type="text"]:focus {
+  border-color: #832c5e;
+}
+
+.apply-btn {
+  padding: 8px 15px;
+  background-color: #e0e0e0;
+  color: #666;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 0.9em;
+  font-weight: 500;
+  white-space: nowrap; /* Agar teks tidak wrap */
+  transition: background-color 0.2s ease;
+}
+
+.apply-btn:hover {
+  background-color: #dcdcdc;
+}
+
+/* Tombol Checkout & Back */
+.checkout-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  background-color: #832c5e;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.checkout-btn:hover {
+  background-color: #6b234a;
+}
+
+.back-shopping-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: transparent;
+  color: #832c5e;
+  border: 1px solid #832c5e;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.back-shopping-btn:hover {
+  background-color: #fdf6f6;
+  color: #6b234a;
+  border-color: #6b234a;
+}
+
+/* Responsif (Contoh Sederhana) */
+@media (max-width: 1090px) {
+  /* Sesuaikan breakpoint jika perlu */
+  .cart-items-column {
+    min-width: 500px; /* Kurangi min-width agar bisa wrap lebih cepat */
+  }
+}
+
+@media (max-width: 992px) {
+  .cart-content {
+    flex-direction: column;
+  }
+  .cart-items-column,
+  .order-summary-column {
+    min-width: 100%;
+    flex: none;
+  }
+  .sub-total-row {
+    justify-content: space-between;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .cart-container h1 {
+    font-size: 2em;
+  }
+  .cart-item-card {
+    flex-direction: column;
+    align-items: flex-start;
+    /* padding-bottom: 20px; -> Hapus padding bawah, gunakan gap */
+  }
+  .item-image {
+    align-self: center; /* Pusatkan gambar di layar kecil */
+  }
+  .item-info {
+    width: 100%; /* Info ambil lebar penuh */
+  }
+  .item-controls {
+    flex-direction: column; /* Tumpuk Qty dan Price */
+    align-items: flex-start; /* Rata kiri */
+    gap: 10px;
+    width: 100%; /* Ambil lebar penuh */
+  }
+  .item-price {
+    justify-content: flex-start; /* Rata kiri price */
+    width: 100%;
+  }
+  .price-value {
+    margin-left: auto; /* Dorong value ke kanan */
+  }
+
+  .summary-line span:first-child {
+    min-width: 60px; /* Kurangi lebar label */
+  }
+  .summary-value {
+    min-width: 80px;
+  }
+  .total-value {
+    min-width: 100px !important;
+  }
+
+  .input-group {
+    flex-wrap: wrap;
+  }
+  .input-group input[type="text"] {
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+  .input-group button {
+    width: 100%;
+    border-radius: 5px;
+    border-left: 1px solid #ccc;
+  }
+}

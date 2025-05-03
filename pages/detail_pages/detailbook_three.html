@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Detail</title>
+    <link rel="stylesheet" href="/style/style.css" />
+    <link rel="stylesheet" href="/style/book-detail.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/">
+          <img src="/assets/images/logo/logo.png" alt="AINA Publishing Logo" />
+        </a>
+      </div>
+      <div class="nav-links">
+        <a href="/pages/home.html" class="nav-link">Home</a>
+        <a href="/pages/about.html" class="nav-link">About</a>
+        <a href="/pages/books.html" class="nav-link">Books</a>
+        <a href="/pages/newsletter.html" class="nav-link">Newsletter</a>
+        <a href="/pages/contact.html" class="nav-link">Contact</a>
+      </div>
+      <div class="cart">
+        <a href="/pages/cart.html">
+          <i class="fas fa-shopping-bag"></i>
+        </a>
+      </div>
+    </nav>
+
+    <section class="newsletter-section">
+      <div class="newsletter-left"></div>
+
+      <div class="newsletter-wave-container">
+        <svg
+          width="100%"
+          height="100%"
+          viewBox="0 0 1000 1000"
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          overflow="visible"
+          shape-rendering="auto"
+        >
+          <defs>
+            <path
+              id="wavepath"
+              d="M 0 2000 0 500 Q 96.5 448 193 500 t 193 0 193 0 193 0 193 0 193 0 193 0 193 0  v1000 z"
+            />
+          </defs>
+          <g>
+            <use xlink:href="#wavepath" fill="#dcafc9"></use>
+          </g>
+        </svg>
+      </div>
+
+      <div class="newsletter-right"></div>
+      <div class="book-detail-overlay">
+        <div class="book-image-section">
+          <img
+            src="/assets/images/books/main.png"
+            alt="Book Cover"
+            class="book-cover-image"
+          />
+          <div class="button-cart">
+            <button class="add-to-cart-btn">Add to Cart</button>
+          </div>
+        </div>
+
+        <div class="book-info-section">
+          <h2>New Released!</h2>
+          <h1 class="book-title">Activity Workbook</h1>
+          <p class="book-author">Katlego Ellian</p>
+          <p class="book-price">$6.15</p>
+
+          <div class="summary-card">
+            <p class="summary-title">Summary</p>
+            <p class="description">
+              Unleash your creativity with Activity Workbook! This exciting book
+              is packed with easy- to-follow projects, fun DIY ideas, and
+              colorful step-by-step guides to help kids turn ordinary materials
+              into amazing crafts. From paper animals to homemade decorations,
+              every page is an invitation to explore, create, and have fun.
+              Perfect for little artists and big imaginations!
+            </p>
+            <div class="category-tags">
+              <span class="category-tag">Activity Book</span>
+              <span class="category-tag">Arts & Craft</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social-links">
+        <a href="https://instagram.com" class="social-link">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a href="mailto:info@ainapublishing.com" class="social-link">
+          <i class="fas fa-envelope"></i>
+        </a>
+        <a href="https://facebook.com" class="social-link">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+      </div>
+      <p class="copyright">© AINA publishing. All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

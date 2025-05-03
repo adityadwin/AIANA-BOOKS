@@ -37,7 +37,6 @@
 
     <main class="cart-container">
       <h1>My Carts</h1>
-
       <div class="cart-content">
         <div class="cart-items-column">
           <div class="cart-item-card">
@@ -60,12 +59,12 @@
                   </button>
                 </div>
                 <div class="item-price">
-                  <span>Price</span>
-                  <span class="price-value">$5.15</span>
+                  <span>Price</span><span class="price-value">$5.15</span>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="cart-item-card">
             <img
               src="../assets/images/books/main.png"
@@ -86,12 +85,12 @@
                   </button>
                 </div>
                 <div class="item-price">
-                  <span>Price</span>
-                  <span class="price-value">$6.15</span>
+                  <span>Price</span><span class="price-value">$6.15</span>
                 </div>
               </div>
             </div>
           </div>
+
           <div class="cart-item-card">
             <img
               src="../assets/images/books/main.png"
@@ -112,8 +111,7 @@
                   </button>
                 </div>
                 <div class="item-price">
-                  <span>Price</span>
-                  <span class="price-value">$6.15</span>
+                  <span>Price</span><span class="price-value">$6.15</span>
                 </div>
               </div>
             </div>
@@ -129,47 +127,75 @@
         <div class="order-summary-column">
           <div class="order-summary-card">
             <h2>Order Summary</h2>
-            <hr />
-            <div class="summary-line item-count">
-              <span>Items</span>
-              <span class="value-box">3</span>
-            </div>
-            <div class="summary-section shipping">
-              <span>Shipping</span>
-              <input
-                type="text"
-                placeholder="Select shipping"
-                readonly
-                class="value-box shipping-placeholder"
-              />
-            </div>
-            <div class="summary-section discount-code">
-              <span>Discount Code</span>
-              <div class="input-group">
-                <input type="text" placeholder="Enter code here" />
-                <button class="apply-btn">Apply</button>
+            <hr class="summary-divider" />
+
+            <div class="summary-details-top">
+              <div class="summary-item items-row">
+                <span class="items-label">Items</span>
+                <input
+                  type="text"
+                  class="items-value-input"
+                  value="3"
+                  readonly
+                />
+              </div>
+              <div class="summary-item shipping-row">
+                <span class="shipping-label">Shipping</span>
+                <input
+                  type="text"
+                  class="shipping-input"
+                  placeholder="Shipping Type"
+                />
+              </div>
+              <div class="summary-item discount-code-row">
+                <span class="discount-code-label">Discount Code</span>
+                <div class="discount-code-input-group">
+                  <input
+                    type="text"
+                    class="discount-code-input"
+                    placeholder="Type Here..."
+                  />
+                  <button class="apply-button">Apply</button>
+                </div>
               </div>
             </div>
-            <hr />
-            <div class="summary-line discount-amount">
-              <span>Discount</span>
-              <span class="value-box summary-value">$xx</span>
-            </div>
-            <div class="summary-line tax-amount">
-              <span>Tax</span>
-              <span class="value-box summary-value">$xx</span>
-            </div>
-            <div class="summary-line total-amount">
-              <span>Total</span>
-              <span class="value-box total-value summary-value">$17.45</span>
+
+            <hr class="summary-divider" />
+
+            <div class="summary-details-bottom">
+              <div class="summary-item discount-amount-row">
+                <span class="discount-amount-label">Discount</span>
+                <input
+                  type="text"
+                  class="discount-amount-value"
+                  value="$xx"
+                  readonly
+                />
+              </div>
+              <div class="summary-item tax-row">
+                <span class="tax-label">Tax</span>
+                <input type="text" class="tax-value" value="$xx" readonly />
+              </div>
+              <div class="summary-item total-row">
+                <span class="total-label">Total</span>
+                <input
+                  type="text"
+                  class="total-value"
+                  value="$17.45"
+                  readonly
+                />
+              </div>
             </div>
 
-            <button class="checkout-btn">Checkout</button>
-            <button class="back-shopping-btn">Back To Shopping</button>
+            <div class="summary-actions">
+              <button class="checkout-button">Checkout</button>
+              <button class="back-shopping-button">Back To Shopping</button>
+            </div>
           </div>
         </div>
       </div>
     </main>
+
     <footer class="footer">
       <div class="social-links">
         <a href="https://instagram.com" class="social-link">

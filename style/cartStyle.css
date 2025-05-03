@@ -24,7 +24,7 @@ body {
 
 .cart-items-column {
   flex: 2;
-  min-width: 750px; /* Disesuaikan agar ada ruang untuk summary */
+  min-width: 750px;
 }
 
 .cart-item-card {
@@ -158,21 +158,19 @@ body {
   color: #832c5e;
 }
 
-/* === Bagian Order Summary === */
-
 .order-summary-column {
   flex: 1;
-  min-width: 400px; /* Lebar minimal untuk summary */
+  min-width: 400px;
 }
 
 .order-summary-card {
-  background-color: #fffdf4; /* Warna latar belakang mendekati gambar */
+  background-color: #fffdf4;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05); /* Shadow lebih halus */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
   display: flex;
   flex-direction: column;
-  gap: 20px; /* Jarak antar bagian utama */
+  gap: 20px;
 }
 
 .order-summary-card h2 {
@@ -180,21 +178,21 @@ body {
   font-weight: 700;
   color: #5e2147;
   margin: 0;
-  text-align: left; /* Sejajarkan ke kiri */
+  text-align: left;
 }
 
 .summary-divider {
   border: none;
   height: 1px;
-  background-color: #dcbccf; /* Warna garis pemisah */
-  margin: 0; /* Hapus margin default hr */
+  background-color: #dcbccf;
+  margin: 0;
 }
 
 .summary-details-top,
 .summary-details-bottom {
   display: flex;
   flex-direction: column;
-  gap: 15px; /* Jarak antar baris item */
+  gap: 15px;
 }
 
 .summary-item {
@@ -216,7 +214,6 @@ body {
   flex-direction: column;
 }
 
-/* Styling untuk label */
 .items-label,
 .shipping-label,
 .discount-code-label,
@@ -225,10 +222,9 @@ body {
 .total-label {
   font-size: 0.95em;
   color: #832c5e;
-  white-space: nowrap; /* Agar label tidak wrap */
+  white-space: nowrap;
 }
 
-/* Styling umum untuk input/value display */
 .items-value-input,
 .shipping-input,
 .discount-code-input,
@@ -243,13 +239,12 @@ body {
   color: #832c5e;
 }
 
-/* Penyesuaian spesifik */
 .items-value-input,
 .discount-amount-value,
 .tax-value,
 .total-value {
-  max-width: 100px; /* Batasi lebar input angka/harga */
-  background-color: #fff; /* Sedikit beda untuk readonly */
+  max-width: 100px;
+  background-color: #fff;
   margin-right: 100px;
 }
 .total-value {
@@ -260,30 +255,29 @@ body {
 .shipping-input,
 .discount-code-input {
   text-align: left;
-  flex-grow: 1; /* Biarkan input ini mengisi ruang */
+  flex-grow: 1;
 }
 
 .total-value {
   font-weight: bold;
 }
 
-/* Grup input kode diskon */
 .discount-code-input-group {
   display: flex;
-  flex-grow: 1; /* Biarkan grup mengisi ruang */
+  flex-grow: 1;
 }
 
 .discount-code-input {
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  border-right: none; /* Hapus border kanan agar menyatu */
+  border-right: none;
 }
 
 .apply-button {
   padding: 8px 15px;
   background-color: #efdee0;
   border: 1px solid #832c5e;
-  border-left: none; /* Hapus border kiri agar menyatu */
+  border-left: none;
   cursor: pointer;
   color: #832c5e;
   font-size: 0.9em;
@@ -295,12 +289,11 @@ body {
   background-color: #eee;
 }
 
-/* Bagian Tombol Aksi */
 .summary-actions {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  margin-top: 10px; /* Jarak dari bagian detail bawah */
+  margin-top: 10px;
 }
 
 .checkout-button,
@@ -312,7 +305,7 @@ body {
   text-align: center;
   border: none;
   width: 100%;
-  box-sizing: border-box; /* Agar padding tidak menambah lebar */
+  box-sizing: border-box;
   transition: opacity 0.2s ease;
 }
 

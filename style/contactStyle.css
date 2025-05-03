@@ -1,6 +1,3 @@
-/* File: contactStyle.css */
-
-/* Hero Section */
 .hero {
   background-color: #efdee0;
   min-height: 130svh;
@@ -20,7 +17,7 @@
 }
 
 .left-box {
-  flex: 0 0 90%; /* Adjusted left box width */
+  flex: 0 0 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -43,26 +40,19 @@
   flex-direction: column;
 }
 
-/* === PERUBAHAN DIMULAI DI SINI === */
 .form-row {
   display: flex;
-  /* justify-content: space-between; */ /* Dihapus atau dikomentari */
-  gap: 250px; /* <-- Ditambahkan: Memberi jarak 20px antar kolom di dalamnya */
+  gap: 250px;
 }
 
-/* Aturan spesifik untuk .form-field di dalam .form-row */
 .form-row .form-field {
-  flex: 1; /* <-- Ditambahkan: Membuat kolom First Name & Last Name berbagi lebar */
-  width: auto; /* <-- Ditambahkan: Meng-override width: 100% dari aturan di bawah */
-  /* Margin-bottom di sini BISA diatur ke 0 jika Anda menambahkan margin-bottom ke .form-row,
-     tapi cara termudah adalah membiarkan margin-bottom dari aturan umum .form-field di bawah */
+  flex: 1;
+  width: auto;
 }
-/* === PERUBAHAN BERAKHIR DI SINI === */
 
-/* Aturan umum untuk SEMUA .form-field */
 .form-field {
-  margin-bottom: 20px; /* Memberi jarak bawah antar field/baris */
-  width: 100%; /* Field lain (Email, Phone, dll) akan tetap full width */
+  margin-bottom: 20px;
+  width: 100%;
 }
 
 .form-field label {
@@ -72,7 +62,7 @@
 
 .form-field input,
 .form-field textarea {
-  width: 100%; /* Input/textarea selalu mengisi lebar .form-field */
+  width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -89,8 +79,8 @@ textarea {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  width: auto; /* Button not full width */
-  align-self: flex-start; /* Align the button to the left */
+  width: auto;
+  align-self: flex-start;
   width: 12%;
 }
 
@@ -123,7 +113,6 @@ textarea {
   height: 700px;
 }
 
-/* Quote Section */
 .quote {
   background-color: #dcafc9;
   min-height: 55svh;
@@ -146,7 +135,7 @@ textarea {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start; /* Align items to the left */
+  align-items: flex-start;
 }
 
 .quote-content h1 {
@@ -157,8 +146,8 @@ textarea {
 
 .quote-icons {
   display: flex;
-  flex-direction: column; /* Change to column for vertical layout */
-  align-items: flex-start; /* Align icons to the left */
+  flex-direction: column;
+  align-items: flex-start;
   margin-top: 20px;
 }
 
@@ -182,9 +171,3 @@ textarea {
 .fas {
   color: white;
 }
-
-/* Footer Section (Tambahkan jika belum ada di contactStyle.css dan dibutuhkan) */
-/* Anda mungkin sudah punya ini di style.css global */
-/* .footer { ... } */
-/* .social-links { ... } */
-/* .copyright { ... } */

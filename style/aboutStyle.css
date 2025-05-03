@@ -1,7 +1,6 @@
-/* Hero Section */
 .hero {
   background-color: #efdee0;
-  min-height: 100svh; /* Adjust the height of the Hero section */
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18,7 +17,7 @@
 }
 
 .right-box {
-  flex: 0 0 80%; /* Adjust right box width to 60% */
+  flex: 0 0 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,7 +27,7 @@
 }
 
 .heading {
-  font-size: 3.5rem; /* Adjust size for heading */
+  font-size: 3.5rem;
   font-weight: bolder;
   margin-bottom: 10px;
   text-align: left;
@@ -42,22 +41,20 @@
   margin-bottom: 30px;
 }
 
-/* Hero Section Wave */
 .hero .wave-container.hero-wave {
   position: absolute;
   bottom: -1px;
   left: 0;
   width: 100%;
-  z-index: 0; /* Ensure it stays behind the hero content */
+  z-index: 0;
 }
 
 .hero .container,
 .hero .right-box {
   position: relative;
-  z-index: 1; /* Ensure content is on top of the wave */
+  z-index: 1;
 }
 
-/* General Wave Container */
 .wave-container {
   position: absolute;
   bottom: 0;
@@ -73,29 +70,28 @@
   height: 700px;
 }
 
-/* Newsletter Section */
 .quote {
   background-color: #dcafc9;
   min-height: 55svh;
   display: flex;
-  justify-content: center; /* Horizontally center content */
-  align-items: center; /* Vertically center content */
+  justify-content: center;
+  align-items: center;
   padding: 64px 32px;
 }
 
 .quote .container {
   width: 100%;
   display: flex;
-  justify-content: center; /* Centering the inner container */
-  align-items: center; /* Align content vertically */
-  text-align: center; /* Center the text inside */
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .quote-content {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center content vertically within this div */
-  align-items: center; /* Center content horizontally within this div */
+  justify-content: center;
+  align-items: center;
 }
 
 .quote-content h1 {
@@ -117,7 +113,7 @@
 .quote-text {
   max-width: 740px;
   width: 100%;
-  text-align: center; /* Center the quote text */
+  text-align: center;
   position: relative;
 }
 
@@ -126,5 +122,5 @@
   font-size: 2rem;
   font-weight: normal;
   font-style: italic;
-  margin-top: 24px; /* Adjust margin to prevent overlap */
+  margin-top: 24px;
 }

@@ -1,7 +1,6 @@
-/* Hero Section */
 .hero_one {
   background-color: #efdee0;
-  min-height: 100svh; /* Adjust the height of the Hero section */
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,7 +10,7 @@
 
 .hero_two {
   background-color: #dcafc9;
-  min-height: 100svh; /* Adjust the height of the Hero section */
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,7 +20,7 @@
 
 .hero_three {
   background-color: #a68ad5;
-  min-height: 100svh; /* Adjust the height of the Hero section */
+  min-height: 100svh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -38,7 +37,7 @@
 }
 
 .right-box {
-  flex: 0 0 80%; /* Adjust right box width to 60% */
+  flex: 0 0 80%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -48,7 +47,7 @@
 }
 
 .heading {
-  font-size: 3.5rem; /* Adjust size for heading */
+  font-size: 3.5rem;
   font-weight: bolder;
   margin-bottom: 10px;
   text-align: left;
@@ -62,51 +61,48 @@
   margin-bottom: 30px;
 }
 
-/* Hero Section Wave */
 .hero_one .wave-container.hero-wave {
   position: absolute;
-  bottom: 0; /* Ensure the wave stays at the bottom */
+  bottom: 0;
   left: 0;
-  width: 100%; /* Stretch the wave to full width */
-  z-index: 0; /* Keep it behind the content */
+  width: 100%;
+  z-index: 0;
 }
 
 .hero_one .container,
 .hero_one .right-box {
   position: relative;
-  z-index: 1; /* Ensure content stays on top of the wave */
+  z-index: 1;
 }
 
-/* Hero Section Wave */
 .hero_two .wave-container.hero-wave {
   position: absolute;
-  bottom: 0; /* Ensure the wave stays at the bottom */
+  bottom: 0;
   left: 0;
-  width: 100%; /* Stretch the wave to full width */
-  z-index: 0; /* Keep it behind the content */
+  width: 100%;
+  z-index: 0;
 }
 
 .hero_two .container,
 .hero_two .right-box {
   position: relative;
-  z-index: 1; /* Ensure content stays on top of the wave */
+  z-index: 1;
 }
 
-/* Hero Section Wave */
 .hero_three .wave-container.hero-wave {
   position: absolute;
-  bottom: 0; /* Ensure the wave stays at the bottom */
+  bottom: 0;
   left: 0;
-  width: 100%; /* Stretch the wave to full width */
-  z-index: 0; /* Keep it behind the content */
+  width: 100%;
+  z-index: 0;
 }
 
 .hero_three .container,
 .hero_three .right-box {
   position: relative;
-  z-index: 1; /* Ensure content stays on top of the wave */
+  z-index: 1;
 }
-/* General Wave Container */
+
 .wave-container {
   position: absolute;
   bottom: 0;
@@ -118,17 +114,16 @@
 
 .wave-container svg {
   display: block;
-  width: 100%; /* Ensure it stretches across full width */
-  height: auto; /* Adjust the height to maintain aspect ratio */
+  width: 100%;
+  height: auto;
 }
 
-/* New Header Style for 'Our Books' and Search Bar */
 .header {
   display: flex;
-  justify-content: space-between; /* Space between heading and search bar */
+  justify-content: space-between;
   width: 100%;
   padding: 20px;
-  margin-bottom: 20px; /* Add space between the header and cards */
+  margin-bottom: 20px;
 }
 
 .our-books-heading {
@@ -145,9 +140,9 @@
 }
 
 .search-icon {
-  font-size: 1.5rem; /* Adjust the size of the icon */
-  color: #832c5e; /* Color of the icon */
-  margin-right: 10px; /* Space between the icon and the search bar */
+  font-size: 1.5rem;
+  color: #832c5e;
+  margin-right: 10px;
 }
 
 .search-bar {
@@ -161,18 +156,17 @@
   color: #832c5e;
 }
 
-/* Adjusting the cards container to fit with new header */
 .cards-container {
   display: flex;
-  flex-direction: column; /* Atur cards dalam arah kolom */
-  gap: 70px; /* Jarak antar card */
+  flex-direction: column;
+  gap: 70px;
   width: 100%;
-  margin-top: 25px; /* Menambahkan margin atas agar jarak dengan header cukup */
+  margin-top: 25px;
 }
 
 .card {
   display: flex;
-  flex-direction: row; /* Arahkan card menjadi kolom */
+  flex-direction: row;
   background-color: #fffdf5;
   border-radius: 70px;
   overflow: hidden;
@@ -188,16 +182,16 @@
 }
 
 .card-left img {
-  width: 100%; /* Ensure the image fills the container width */
-  max-width: 250px; /* Set the maximum width for the image */
-  height: auto; /* Keep the aspect ratio intact */
-  max-height: 300px; /* Set a maximum height to prevent oversized images */
-  object-fit: cover; /* Ensure the image maintains aspect ratio without distortion */
-  transition: transform 0.3s ease; /* Optional: Adds a smooth transition effect */
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
 .card-left a {
-  display: block; /* Ensures the image remains clickable */
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -207,7 +201,7 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start; /* Jangan terlalu banyak ruang di antara elemen */
+  justify-content: flex-start;
   border-left: 4px solid #dcafc9;
   margin-top: 25px;
   margin-bottom: 25px;
@@ -217,21 +211,21 @@
 .card-title {
   font-size: 2rem;
   font-weight: bold;
-  margin-bottom: 5px; /* Mengurangi jarak bawah dari judul */
+  margin-bottom: 5px;
 }
 
 .card-author {
   font-size: 1.2rem;
   font-weight: bold;
   opacity: 50%;
-  margin-bottom: 5px; /* Mengurangi jarak bawah dari penulis */
+  margin-bottom: 5px;
 }
 
 .card-price {
   color: #832c5e;
   font-weight: bold;
   font-size: 1.5rem;
-  margin-bottom: 10px; /* Mengurangi jarak bawah dari harga */
+  margin-bottom: 10px;
 }
 
 .card-description {

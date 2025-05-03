@@ -113,7 +113,7 @@ ul {
   margin-top: auto;
   color: white;
   display: flex;
-  flex-direction: column; /* Stack the elements vertically */
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -136,13 +136,5 @@ ul {
 
 .copyright {
   font-size: 14px;
-  margin-top: 16px; /* Add space above the copyright text */
-}
-
-@media (min-width: 768px) {
-  .nav-links {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-  }
+  margin-top: 16px;
 }

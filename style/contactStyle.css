@@ -1,3 +1,5 @@
+/* File: contactStyle.css */
+
 /* Hero Section */
 .hero {
   background-color: #efdee0;
@@ -41,14 +43,26 @@
   flex-direction: column;
 }
 
+/* === PERUBAHAN DIMULAI DI SINI === */
 .form-row {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */ /* Dihapus atau dikomentari */
+  gap: 250px; /* <-- Ditambahkan: Memberi jarak 20px antar kolom di dalamnya */
 }
 
+/* Aturan spesifik untuk .form-field di dalam .form-row */
+.form-row .form-field {
+  flex: 1; /* <-- Ditambahkan: Membuat kolom First Name & Last Name berbagi lebar */
+  width: auto; /* <-- Ditambahkan: Meng-override width: 100% dari aturan di bawah */
+  /* Margin-bottom di sini BISA diatur ke 0 jika Anda menambahkan margin-bottom ke .form-row,
+     tapi cara termudah adalah membiarkan margin-bottom dari aturan umum .form-field di bawah */
+}
+/* === PERUBAHAN BERAKHIR DI SINI === */
+
+/* Aturan umum untuk SEMUA .form-field */
 .form-field {
-  margin-bottom: 20px;
-  width: 100%; /* Full width form fields */
+  margin-bottom: 20px; /* Memberi jarak bawah antar field/baris */
+  width: 100%; /* Field lain (Email, Phone, dll) akan tetap full width */
 }
 
 .form-field label {
@@ -58,7 +72,7 @@
 
 .form-field input,
 .form-field textarea {
-  width: 100%;
+  width: 100%; /* Input/textarea selalu mengisi lebar .form-field */
   padding: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -137,7 +151,7 @@ textarea {
 
 .quote-content h1 {
   color: white;
-  font-size: 4rem;
+  font-size: 5rem;
   font-weight: bold;
 }
 
@@ -168,3 +182,9 @@ textarea {
 .fas {
   color: white;
 }
+
+/* Footer Section (Tambahkan jika belum ada di contactStyle.css dan dibutuhkan) */
+/* Anda mungkin sudah punya ini di style.css global */
+/* .footer { ... } */
+/* .social-links { ... } */
+/* .copyright { ... } */
